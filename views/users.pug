@@ -1,0 +1,15 @@
+extends partials/header
+
+block content
+
+    table
+        tr
+            th USERNAME
+            th PASSWORD
+   
+        each data in users
+            tr 
+                td= data.username
+                td= data.password
+               
+    include partials/footer
